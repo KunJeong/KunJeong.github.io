@@ -1,0 +1,29 @@
+/* Tailwind typography plugin ("prose"), re-tinted through the design tokens. */
+
+.article {
+	--tw-prose-body: var(--color-ink);
+	--tw-prose-headings: var(--color-ink);
+	--tw-prose-links: var(--color-accent);
+	--tw-prose-bold: var(--color-ink);
+	--tw-prose-counters: var(--color-faint);
+	--tw-prose-bullets: var(--color-faint);
+	--tw-prose-hr: var(--color-hairline);
+	--tw-prose-quotes: var(--color-muted);
+	--tw-prose-quote-borders: var(--color-hairline);
+	--tw-prose-captions: var(--color-faint);
+	--tw-prose-code: var(--color-ink);
+	--tw-prose-pre-bg: var(--color-hairline);
+	--tw-prose-pre-code: var(--color-ink);
+	--tw-prose-th-borders: var(--color-hairline);
+	--tw-prose-td-borders: var(--color-hairline);
+	font-family: var(--font-sans);
+}
+
+.article :is(h1, h2, h3, h4) {
+	font-family: var(--font-heading);
+	font-weight: 600;
+}
+
+.article a {
+	text-underline-offset: 3px;
+}

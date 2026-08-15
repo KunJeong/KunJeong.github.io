@@ -1,0 +1,16 @@
+/* Self-hosted variable fonts, imported from the layout so Vite fingerprints the URLs and honors the base path. */
+
+@font-face {
+	font-family: 'Newsreader';
+	font-style: normal;
+	font-weight: 200 800;
+	font-display: swap;
+	src: url('./fonts/Newsreader.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Lora';
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	src: url('./fonts/Lora.woff2') format('woff2');
+}
