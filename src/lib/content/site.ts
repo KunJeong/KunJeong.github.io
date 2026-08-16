@@ -1,8 +1,6 @@
 import type { LinkItem } from './types';
 
-const nav: LinkItem[] = [
-	{ label: 'Writing', href: '/blog' }
-];
+const nav: LinkItem[] = [{ label: 'Writing', href: '/blog' }];
 
 export const site = {
 	title: 'Seokhun Jeong',

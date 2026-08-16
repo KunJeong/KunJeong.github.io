@@ -7,8 +7,11 @@
 
 <article class="pub">
 	<h3 class="pub__title">{pub.title}</h3>
-	<p class="pub__authors">{#each pub.authors as author, i}{i > 0 ? ', ' : ''}<span
-				class:me={author.me}>{author.name}</span>{/each}</p>
+	<p class="pub__authors">
+		{#each pub.authors as author, i}{i > 0 ? ', ' : ''}<span class:me={author.me}
+				>{author.name}</span
+			>{/each}
+	</p>
 	<p class="pub__venue">
 		<span>{pub.venue}</span>
 		{#if pub.links?.length}

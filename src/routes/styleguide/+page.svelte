@@ -61,7 +61,8 @@
 			{#each type as t}
 				<div class="type__row">
 					<span class="type__sample" style="font-size: var({t.token}); font-family: {t.font}"
-						>{t.role}</span>
+						>{t.role}</span
+					>
 					<code>{t.token}</code>
 				</div>
 			{/each}

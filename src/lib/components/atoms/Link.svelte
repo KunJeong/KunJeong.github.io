@@ -21,7 +21,8 @@
 	class="link"
 	class:muted
 	target={external ? '_blank' : undefined}
-	rel={external ? 'noopener noreferrer' : undefined}>{@render children()}</a>
+	rel={external ? 'noopener noreferrer' : undefined}>{@render children()}</a
+>
 
 <style>
 	.link {

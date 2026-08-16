@@ -8,7 +8,9 @@
 	<span class="edu__period">{entry.period}</span>
 	<div class="edu__body">
 		<div class="edu__degree">{entry.degree}</div>
-		<div class="edu__place">{entry.place}{#if entry.note}, {entry.note}{/if}</div>
+		<div class="edu__place">
+			{entry.place}{#if entry.note}, {entry.note}{/if}
+		</div>
 	</div>
 </div>
 

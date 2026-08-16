@@ -16,7 +16,8 @@ export const publications: Publication[] = [
 	},
 	{
 		year: 2026,
-		title: 'P4-SpecTec: Integrating a Language Mechanization Framework into the Real-World P4 Specification',
+		title:
+			'P4-SpecTec: Integrating a Language Mechanization Framework into the Real-World P4 Specification',
 		authors: [
 			{ name: 'Jaehyun Lee' },
 			{ name: 'Seokhun Jeong', me: true },

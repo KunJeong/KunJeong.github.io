@@ -25,7 +25,9 @@
 		<div class="post__meta">
 			<DateLabel date={data.post.date} />
 			{#if data.post.tags?.length}
-				<span class="post__tags">{#each data.post.tags as tag}<Tag>{tag}</Tag>{/each}</span>
+				<span class="post__tags"
+					>{#each data.post.tags as tag}<Tag>{tag}</Tag>{/each}</span
+				>
 			{/if}
 		</div>
 	</header>
