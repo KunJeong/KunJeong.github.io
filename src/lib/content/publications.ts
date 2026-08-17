@@ -25,7 +25,8 @@ export const publications: Publication[] = [
 			{ name: 'Haechan Kwon' },
 			{ name: 'Sukyoung Ryu' }
 		],
-		venue: 'OOPSLA 2026'
+		venue: 'OOPSLA 2026',
+		links: [{ label: 'Pre-print', href: 'https://arxiv.org/abs/2608.00639' }]
 	},
 	{
 		year: 2026,
@@ -45,7 +46,8 @@ export const publications: Publication[] = [
 		authors: [
 			{ name: 'Sukyoung Ryu' },
 			{ name: 'Seokhun Jeong', me: true },
-			{ name: 'Jaehyun Lee' }
+			{ name: 'Jaehyun Lee' },
+			{ name: 'Jihong Min' }
 		],
 		venue: 'PLDI 2026 Tutorial',
 		links: [
