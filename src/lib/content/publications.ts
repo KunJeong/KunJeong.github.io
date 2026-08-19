@@ -12,7 +12,8 @@ export const publications: Publication[] = [
 			{ name: 'Sungjae Hwang' }
 		],
 		venue: 'ASE 2026',
-		pinned: true
+		pinned: true,
+		links: [{ label: 'Pre-print', href: 'https://arxiv.org/abs/2608.17738' }]
 	},
 	{
 		year: 2026,
