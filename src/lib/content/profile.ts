@@ -5,7 +5,7 @@ export const profile: Profile = {
 	role: 'M.S. Student, School of Computing, KAIST',
 	location: 'Daejeon, South Korea',
 	initials: 'SJ',
-	bio: 'I am an M.S. student in the Programming Language Research Group (PLRG) at KAIST. I work in applying programming languages techniques to solve software engineering problems, with recent work on mechanizing real-world language specifications (P4) and specification-guided testing of systems such as Ethereum consensus clients.',
+	bio: 'I am an M.S. student in the Programming Language Research Group (PLRG) at KAIST. I work in applying programming languages techniques to solve software engineering problems, with recent work on mechanizing the P4 language specification and the Ethereum consensus algorithm.',
 	photo: '/portrait.jpg',
 	links: [
 		{ label: 'Email', href: 'mailto:kunjeong99@gmail.com' },
