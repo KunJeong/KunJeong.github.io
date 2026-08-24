@@ -11,7 +11,7 @@
 <div class="blog">
 	<header class="blog__head">
 		<h1 class="blog__title">Writing</h1>
-		<p class="blog__lede">Essays and notes on research, evaluation, and the craft around them.</p>
+		<p class="blog__lede">Essays and notes.</p>
 	</header>
 
 	{#if pinnedPosts.length}
