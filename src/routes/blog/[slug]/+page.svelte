@@ -7,9 +7,9 @@
 
 	let { data }: { data: PageData } = $props();
 
-	// Every post is compiled in at build time. Select this one's component by slug.
+	// Every post is compiled in at build time. Select this one's component by source filename.
 	const modules = import.meta.glob('/src/content/blog/*.md', { eager: true });
-	const mod = modules[`/src/content/blog/${data.post.slug}.md`] as { default: Component };
+	const mod = modules[`/src/content/blog/${data.post.source}.md`] as { default: Component };
 	const Post = mod.default;
 </script>
 
@@ -20,7 +20,7 @@
 
 <article class="post">
 	<p class="post__back"><Link href="/blog" muted>← Writing</Link></p>
-	<header class="post__head">
+	<header class="post__head" lang={data.post.language}>
 		<h1 class="post__title">{data.post.title}</h1>
 		<div class="post__meta">
 			<DateLabel date={data.post.date} />
@@ -31,7 +31,7 @@
 			{/if}
 		</div>
 	</header>
-	<div class="prose article"><Post /></div>
+	<div class="prose article" lang={data.post.language}><Post /></div>
 </article>
 
 <style>

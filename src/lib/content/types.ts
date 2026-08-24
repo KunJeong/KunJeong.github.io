@@ -41,14 +41,19 @@ export interface ResearchTheme {
 	description: string;
 }
 
+export type PostLanguage = 'en' | 'ko';
+
 export interface PostMeta {
 	slug: string;
+	/** Markdown filename without the .md extension. */
+	source: string;
 	title: string;
 	/** 'YYYY-MM-DD'. Keep it quoted in frontmatter so YAML leaves it a string. */
 	date: string;
 	summary: string;
 	pinned?: boolean;
 	tags?: string[];
+	language: PostLanguage;
 }
 
 export interface EducationEntry {

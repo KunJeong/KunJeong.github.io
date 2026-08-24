@@ -13,8 +13,8 @@
 	--color-accent: var(--color-ink-blue);
 	--color-on-accent: #ffffff;
 
-	--font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
-	--font-heading: 'Lora', Georgia, 'Times New Roman', serif;
+	--font-display: 'Newsreader', 'Noto Serif KR Variable', Georgia, 'Times New Roman', serif;
+	--font-heading: 'Lora', 'Noto Serif KR Variable', Georgia, 'Times New Roman', serif;
 	--font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 
 	--text-display: 2.375rem; /* 38px */

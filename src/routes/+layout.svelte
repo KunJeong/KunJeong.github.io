@@ -1,5 +1,7 @@
 <script lang="ts">
 	import '$lib/styles/fonts.css';
+	import '@fontsource-variable/noto-serif-kr/wght.css';
+	import 'katex/dist/katex.min.css';
 	import '../app.css';
 	import newsreaderUrl from '$lib/styles/fonts/Newsreader.woff2?url';
 	import loraUrl from '$lib/styles/fonts/Lora.woff2?url';

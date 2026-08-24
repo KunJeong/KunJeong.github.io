@@ -27,3 +27,21 @@
 .article a {
 	text-underline-offset: 3px;
 }
+
+.article code::before,
+.article code::after {
+	content: none;
+}
+
+.article :not(pre) > code {
+	padding: 0.1em 0.3em;
+	border-radius: 0.25rem;
+	background: color-mix(in srgb, var(--color-accent) 7%, var(--color-surface));
+	font-weight: 550;
+}
+
+.article .katex-display {
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-block: 0.25rem;
+}
