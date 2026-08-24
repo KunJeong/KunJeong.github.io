@@ -54,6 +54,7 @@ export interface PostMeta {
 	pinned?: boolean;
 	tags?: string[];
 	language: PostLanguage;
+	unlisted: boolean;
 }
 
 export interface EducationEntry {

@@ -3,6 +3,7 @@ title: Marktoberdorf 2026 Trip Report
 date: '2026-08-24'
 summary: 2026년 8월 12일부터 21일까지 열흘간 참여한 Marktoberdorf Summer School에서 배우고 느낀 점입니다.
 language: ko
+unlisted: true
 ---
 
 ### 서문

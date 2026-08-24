@@ -7,6 +7,7 @@ interface MarkdownMeta {
 	pinned?: boolean;
 	tags?: string[];
 	language?: PostLanguage;
+	unlisted?: boolean;
 }
 
 // A language suffix marks the post language without becoming part of its URL slug.
@@ -27,10 +28,12 @@ export const posts: PostMeta[] = Object.entries(files)
 			summary: meta.summary ?? '',
 			pinned: meta.pinned ?? false,
 			tags: meta.tags ?? [],
-			language: meta.language ?? (suffix?.[2] as PostLanguage | undefined) ?? 'en'
+			language: meta.language ?? (suffix?.[2] as PostLanguage | undefined) ?? 'en',
+			unlisted: meta.unlisted ?? false
 		};
 	})
 	.sort((a, b) => (a.date < b.date ? 1 : -1));
 
-export const pinnedPosts = posts.filter((p) => p.pinned);
-export const recentPosts = posts.slice(0, 3);
+export const listedPosts = posts.filter((post) => !post.unlisted);
+export const pinnedPosts = listedPosts.filter((post) => post.pinned);
+export const recentPosts = listedPosts.slice(0, 3);

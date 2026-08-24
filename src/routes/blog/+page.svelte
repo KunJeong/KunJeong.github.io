@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { posts, pinnedPosts } from '$lib/content/posts';
+	import { listedPosts, pinnedPosts } from '$lib/content/posts';
 	import PostCard from '$lib/components/blog/PostCard.svelte';
 </script>
 
@@ -23,7 +23,7 @@
 
 	<section class="blog__group">
 		<h2 class="blog__group-title">All posts</h2>
-		{#each posts as post}<PostCard {post} />{/each}
+		{#each listedPosts as post}<PostCard {post} />{/each}
 	</section>
 </div>
 

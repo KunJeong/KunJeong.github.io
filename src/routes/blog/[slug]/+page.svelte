@@ -16,11 +16,13 @@
 <svelte:head>
 	<title>{data.post.title} · Seokhun Jeong</title>
 	<meta name="description" content={data.post.summary} />
+	{#if data.post.unlisted}<meta name="robots" content="noindex, nofollow, noarchive" />{/if}
 </svelte:head>
 
 <article class="post">
 	<p class="post__back"><Link href="/blog" muted>← Writing</Link></p>
 	<header class="post__head" lang={data.post.language}>
+		{#if data.post.unlisted}<span class="post__visibility">Unlisted</span>{/if}
 		<h1 class="post__title">{data.post.title}</h1>
 		<div class="post__meta">
 			<DateLabel date={data.post.date} />
@@ -41,6 +43,19 @@
 	.post__back {
 		font-size: var(--text-fine);
 		margin: 0 0 1.5rem;
+	}
+	.post__visibility {
+		display: inline-block;
+		font-size: var(--text-meta);
+		font-weight: 600;
+		line-height: 1.4;
+		letter-spacing: 0.02em;
+		color: var(--color-accent);
+		background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+		border: 1px solid color-mix(in srgb, var(--color-accent) 36%, transparent);
+		border-radius: var(--radius-sm);
+		padding: 0.1875rem 0.5625rem;
+		margin: 0 0 0.75rem;
 	}
 	.post__title {
 		font-family: var(--font-display);
