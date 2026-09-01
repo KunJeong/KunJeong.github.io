@@ -3,6 +3,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
 import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
+import rehypeEscapeKatexBraces from './src/lib/rehype-escape-katex-braces.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,7 +13,7 @@ const config = {
 		mdsvex({
 			extensions: ['.md'],
 			remarkPlugins: [remarkMath],
-			rehypePlugins: [rehypeKatex]
+			rehypePlugins: [rehypeKatex, rehypeEscapeKatexBraces]
 		})
 	],
 
