@@ -2,10 +2,10 @@ import type { Profile } from './types';
 
 export const profile: Profile = {
 	name: 'Seokhun Jeong',
-	role: 'M.S. Student, School of Computing, KAIST',
+	role: 'Ph.D. Student, School of Computing, KAIST',
 	location: 'Daejeon, South Korea',
 	initials: 'SJ',
-	bio: 'I am an M.S. student in the Programming Language Research Group (PLRG) at KAIST. I work in applying programming languages techniques to solve software engineering problems, with recent work on mechanizing the P4 language specification and the Ethereum consensus algorithm.',
+	bio: 'I am an Ph.D. student in the Programming Language Research Group (PLRG) at KAIST. My goal is to reduce the burden of maintaining multiple representations of the same semantics, in software where semantic accuracy is critical. The method of choice is a mechanized specification, a single-source of truth from other representations can be mechanically derived. Most recently, I have mechanized the Ethereum consensus algorithm and discovered disagreements among implementations through differential testing.',
 	photo: '/portrait.jpg',
 	links: [
 		{ label: 'Email', href: 'mailto:kunjeong99@gmail.com' },

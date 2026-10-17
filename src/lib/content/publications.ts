@@ -13,7 +13,10 @@ export const publications: Publication[] = [
 		],
 		venue: 'ASE 2026',
 		pinned: true,
-		links: [{ label: 'Pre-print', href: 'https://arxiv.org/abs/2608.17738' }]
+		links: [
+			{ label: 'DOI', href: 'https://dl.acm.org/doi/10.1145/3832783.3834406' },
+			{ label: 'Pre-print', href: 'https://arxiv.org/abs/2608.17738' }
+		]
 	},
 	{
 		year: 2026,
@@ -27,7 +30,10 @@ export const publications: Publication[] = [
 			{ name: 'Sukyoung Ryu' }
 		],
 		venue: 'OOPSLA 2026',
-		links: [{ label: 'Pre-print', href: 'https://arxiv.org/abs/2608.00639' }]
+		links: [
+			{ label: 'DOI', href: 'https://dl.acm.org/doi/10.1145/3839535' },
+			{ label: 'Pre-print', href: 'https://arxiv.org/abs/2608.00639' }
+		]
 	},
 	{
 		year: 2026,
