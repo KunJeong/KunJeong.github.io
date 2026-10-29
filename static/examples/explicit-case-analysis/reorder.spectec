@@ -1,0 +1,32 @@
+syntax shape = | A nat | B nat
+var n : nat
+var x : shape
+
+relation T: nat ~> nat
+  hint(input %0)
+
+rule T/one:
+  n ~> 1
+  -- if $(n > 5)
+  -- if $(n > 100)
+
+rule T/two:
+  n ~> 2
+  -- if $(n > 3)
+
+rule T/three:
+  n ~> 3
+  -- if $(n > 5)
+
+relation W: shape ~> nat
+  hint(input %0)
+
+rule W/a:
+  A n ~> 1
+  -- if $(n > 5)
+
+rule W/any:
+  x ~> 2
+
+rule W/a2:
+  A n ~> 3

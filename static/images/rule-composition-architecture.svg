@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" font-family="Helvetica, Arial, sans-serif" font-size="14">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+    <marker id="n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c77700"/>
+    </marker>
+  </defs>
+  <rect width="780" height="470" fill="#ffffff"/>
+
+  <!-- Legend -->
+  <g font-size="12" fill="#333">
+    <rect x="290" y="14" width="14" height="14" rx="3" fill="#f3f3f3" stroke="#777"/>
+    <text x="310" y="26">existing</text>
+    <rect x="380" y="14" width="14" height="14" rx="3" fill="#fff4e5" stroke="#c77700"/>
+    <text x="400" y="26">new or changed</text>
+  </g>
+
+  <!-- Nested form -->
+  <rect x="20" y="50" width="190" height="80" rx="10" fill="#fff4e5" stroke="#c77700" stroke-width="1.5"/>
+  <text x="115" y="82" text-anchor="middle" font-weight="bold" font-size="16">Nested form</text>
+  <text x="115" y="106" text-anchor="middle" fill="#333">shared premises once</text>
+  <line x1="214" y1="90" x2="286" y2="90" stroke="#c77700" stroke-width="1.5" marker-start="url(#n)" marker-end="url(#n)"/>
+  <text x="250" y="80" text-anchor="middle" font-size="12" fill="#c77700">generate</text>
+
+  <!-- EL -->
+  <rect x="290" y="50" width="220" height="80" rx="10" fill="#fff4e5" stroke="#c77700" stroke-width="1.5"/>
+  <text x="400" y="78" text-anchor="middle" font-weight="bold" font-size="16">EL rules</text>
+  <text x="400" y="100" text-anchor="middle" fill="#333">flat form</text>
+  <text x="400" y="118" text-anchor="middle" fill="#333">+ -- case premises</text>
+
+  <!-- elaborate -->
+  <line x1="400" y1="132" x2="400" y2="206" stroke="#c77700" stroke-width="1.5" marker-end="url(#n)"/>
+  <text x="385" y="160" text-anchor="end" font-size="12" fill="#c77700">elaborate:</text>
+  <text x="385" y="176" text-anchor="end" font-size="12" fill="#c77700">check disjointness per choice</text>
+
+  <!-- IL -->
+  <rect x="290" y="210" width="220" height="80" rx="10" fill="#fff4e5" stroke="#c77700" stroke-width="1.5"/>
+  <text x="400" y="238" text-anchor="middle" font-weight="bold" font-size="16">IL rules</text>
+  <text x="400" y="260" text-anchor="middle" fill="#333">+ case premises</text>
+  <text x="400" y="278" text-anchor="middle" fill="#333">checked disjoint</text>
+
+  <!-- structure -->
+  <line x1="400" y1="292" x2="400" y2="366" stroke="#c77700" stroke-width="1.5" marker-end="url(#n)"/>
+  <text x="385" y="312" text-anchor="end" font-size="12" fill="#c77700">structure:</text>
+  <text x="385" y="328" text-anchor="end" font-size="12" fill="#c77700">share identical premises,</text>
+  <text x="385" y="344" text-anchor="end" font-size="12" fill="#c77700">one case analysis per choice</text>
+
+  <!-- SL -->
+  <rect x="290" y="370" width="220" height="80" rx="10" fill="#f3f3f3" stroke="#777" stroke-width="1.5"/>
+  <text x="400" y="402" text-anchor="middle" font-weight="bold" font-size="16">SL</text>
+  <text x="400" y="426" text-anchor="middle" fill="#333">unchanged from here on</text>
+
+  <!-- Consumers -->
+  <rect x="580" y="60" width="180" height="60" rx="10" fill="#f3f3f3" stroke="#777" stroke-width="1.5"/>
+  <text x="670" y="95" text-anchor="middle">splice, LaTeX</text>
+  <line x1="512" y1="90" x2="576" y2="90" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+
+  <rect x="580" y="215" width="180" height="70" rx="10" fill="#fff4e5" stroke="#c77700" stroke-width="1.5"/>
+  <text x="670" y="245" text-anchor="middle" font-weight="bold">IL interpreter</text>
+  <text x="670" y="268" text-anchor="middle" fill="#333">committed execution</text>
+  <line x1="512" y1="250" x2="576" y2="250" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+</svg>
