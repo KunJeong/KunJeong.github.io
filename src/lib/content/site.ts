@@ -4,8 +4,8 @@ const nav: LinkItem[] = [{ label: 'Writing', href: '/blog' }];
 
 export const site = {
 	title: 'Seokhun Jeong',
-	tagline: 'M.S. Student, PLRG @ KAIST',
+	tagline: 'Ph.D. Student, PLRG @ KAIST',
 	description:
-		'Seokhun Jeong is an M.S. student in the Programming Language Research Group at KAIST, working on programming languages and software engineering.',
+		'Seokhun Jeong is a Ph.D. student in the Programming Language Research Group at KAIST, working on programming languages and software engineering.',
 	nav
 };
